@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: black;
+}
+.arrow{
+    font-weight: bold;
+    font-size: 30px;
+    opacity: 20%;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 0  5px;
+    transition: all 0.2s linear;
+}
+.arrow:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 80%;
+}
+.leftarrow{
+   left: 1%;
+}
+.rightarrow{
+    right: 1%;
+}
+
+.main{
+    background-color: #3D087B;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding-top: 40px ;
+}
+
+/* ****************** LEFT CONTAINER ***************************** */
+
+.leftContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.logo > p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #A983D6;
+    margin-bottom: 10px;
+}
+
+.icons{
+    background-color: white;
+    width: 23vw;
+    padding: 18px 2vw;
+    border-radius: 10px;
+}
+.icons > p{
+    color: #858585;
+    margin-bottom: 10px;
+}
+.iconImg{
+    display: flex;
+    gap: 3.7vw;
+}
+
+.setbox
+{
+    float: right;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    background-color: white;
+    box-shadow: 1px 3px 5px 0 black;
+}
+.setbox > p{
+    padding: 2px 0;
+    margin-bottom: 10px;
+}
+.setTime{
+    color: #00A5ECDE;
+}
+.setTime > *{
+    background-color: #DDF5FF;
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.rightTop{
+    background-color: white;
+    align-items: center;
+    display: flex;
+    padding: 15px 2.5vw;
+    border-radius: 10px;
+    justify-content: space-between;
+    width: 35vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    z-index:2;
+}
+.timeText{
+    color: #3D087B;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hours{
+    background-color: #F6E2FF;
+    font-size: 2.4vw;
+    height: 90px;
+    width: 5vw;
+    color: #8A11BF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hours > .text{
+    font-size: 1.6vw;
+    color: #5F0089;
+}
+
+.ampm{
+    background: linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%);
+    font-size: 2.4vw;
+    height: 90px;
+    width: 5vw;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -2vw;
+
+}
+
+.colon{
+    font-size: 2vw;
+    color: #8A11BF;
+    margin: 0 -3.1vw;
+}
+
+.rightup{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.back{
+    height: 120px;
+    width: 28vw;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 71%;
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+}
+.back2{
+    height: 120px;
+    width: 25vw;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 22%;
+    position: absolute;
+    top: 32px;
+}
+
+
+
+/* ****************** RIGHT CONTAINER ***************************** */
+.rightContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 100px;
+}
+
+.timeImg{
+    margin-top: 10px;
+}
+
+.timeImg img{
+    width: 35.5vw;
+    height: 341px;
+}
+
+
+/* ****************************** RESPONSIVE ******************************* */
+/* Tablets/Ipads View */
+@media screen and (max-width: 992px) {
+
+    /* ******* LEFT ******** */
+    .leftContainer{
+        gap: 30px;
+    }
+    .logo img{
+        width: 20vw;
+    }
+    .icons{
+        padding: 10px 1.7vw;
+    }
+    select{
+        color: #3D087BDE;
+        width: 15vw;
+        padding: 5px;
+        font-size: 10px;
+        border: 2px solid #EDEDED;
+        border-radius: 5px;
+        outline: none;
+    }
+    .setbox{
+        margin-top: 20px;
+    }
+    .setbox, .setTime > *{
+        width: 70%;
+    }
+
+    /* ********** RIGHT ******** */
+    .rightContainer{
+        gap: 20px;
+    }
+    .rightTop{
+        padding: 10px 2.1vw;
+    }
+    .timeText{
+        font-size: 17px;
+    }
+    .hours{
+        height: 65px;
+    }
+    .ampm{
+        height: 65px;
+        margin-left: -1.5vw;
+    }
+    .colon{
+        margin: 0 -2.1vw;
+    }
+    .back{
+        height: 85px;
+    }
+    .back2{
+        height: 85px;
+    }
+    .foodText{
+        padding: 15px 1vw;
+    }
+    .foodText2{
+        padding: 8px 1vw;
+    }
+    .timeImg img{
+        width: 35vw;
+        height: 28vw;
+    }
+
+}
+
+
+
+@media screen and (max-width: 790px) {
+    .main{
+        gap: 40px;
+    }
+    .leftContainer{
+        gap: 25px;
+    }
+    .icons{
+        width: 25vw;
+    }
+    .iconImg > img{
+        width: 28px;
+    }
+    .hours, .ampm{
+        height: 55px;
+    }
+    .back, .back2{
+        height: 75px;
+    }
+    .setbox, .setTime > *{
+        width: 70%;
+        font-size: 1.8vw;
+    }
+    .setbox > p{
+        margin-bottom: 3px;
+    } 
+    .timeImg img{
+        width: 40vw;
+        height: 30vw;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width: 600px) {
+    .main{
+        flex-direction: column;
+        height: auto;
+        padding-top: 20px;
+    }
+    .leftContainer{
+        margin: auto;
+    }
+    .logo > p{
+        font-size: 2.8vw;
+    }
+    .icons{
+        width: 40vw;
+        padding: 7px 2.8vw;
+    }
+    .setalarm{
+        font-size: 3vw;
+        margin-top: 0;
+    }
+    .setbox{
+        width: 55%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .setbox > p{
+        font-size: 2.5vw;
+    }
+    .setTime > *{
+        margin: auto;
+        margin-bottom: 10px;
+        font-size: 2.5vw;
+        width: 55%;
+    }
+
+    /* ************* Right Container ************** */
+    .rightContainer{
+        margin: auto;
+    }
+    .rightTop{
+        width: 80vw;
+        padding: 10px 3.5vw;
+    }
+    .hours{
+        height: 12vw;
+        width: 11vw;
+        font-size: 4vw;
+    }
+    .hours > .text{
+        font-size: 2.8vw;
+    }
+    .ampm{
+        width: 11vw;
+        height: 12vw;
+        font-size: 4vw;
+        margin-left: -6vw;
+    }
+    .colon{
+        font-size: 5vw;
+        margin: 0 -7vw;
+    }
+    .back{
+        height: 16.4vw;
+        width: 70vw;
+    }
+    .back2{
+        height: 16vw;
+        width: 60vw;
+    }
+    .timeImg img{
+        width: 80vw;
+        height: 55vw;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .back{
+        height: 17.5vw;
+    }
+    .leftContainer{
+        gap: 20px;
+    }
+}
