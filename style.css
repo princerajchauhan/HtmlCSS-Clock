@@ -460,8 +460,11 @@ select{
         gap: 20px;
     }
 }
-@media screen and (max-width: 240px) {
+@media screen and (max-width: 260px) {
      .wakeupText2{
         font-size: 1.78vw;
+    }
+    .back{
+        height: 17.9vw;
     }
 }
