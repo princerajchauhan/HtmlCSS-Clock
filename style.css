@@ -336,8 +336,6 @@ select{
         padding-top: 20px;
     }
     .leftContainer{
-        /* display: flex;
-        flex-direction: column; */
         margin: auto;
     }
     .timeSet{
@@ -433,5 +431,32 @@ select{
     .timeImg img{
         width: 80vw;
         height: 55vw;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .back{
+        height: 17.1vw;
+    }
+    .back2{
+        height: 15.4vw;
+    }
+    .leftContainer{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .wakeupText2{
+        font-size: 1.8vw;
+    }
+    .back{
+        height: 17.5vw;
+    }
+    .back2{
+        height: 15.4vw;
+    }
+    .leftContainer{
+        gap: 20px;
     }
 }
